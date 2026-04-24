@@ -1,5 +1,9 @@
 # Project Management Dashboard
 
+## Dashboard Preview
+
+![Dashboard](dashboard.png)
+
 This project is a full-stack solution for managing projects using:
 
 - Node.js (Express API)
