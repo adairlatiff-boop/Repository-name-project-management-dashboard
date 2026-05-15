@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: ippmis-frontend
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: ippmis-frontend
+
+  template:
+    metadata:
+      labels:
+        app: ippmis-frontend
+
+    spec:
+      containers:
+      - name: ippmis-frontend
+
+        image: ippmis-frontend:latest
+
+        imagePullPolicy: Never
+
+        ports:
+        - containerPort: 80

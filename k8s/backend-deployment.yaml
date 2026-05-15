@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: ippmis-backend
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: ippmis-backend
+
+  template:
+    metadata:
+      labels:
+        app: ippmis-backend
+
+    spec:
+      containers:
+      - name: ippmis-backend
+
+        image: ippmis-backend:latest
+
+        imagePullPolicy: Never
+
+        ports:
+        - containerPort: 3000
+
+        env:
+        - name: DB_HOST
+          value: ippmis-postgres
+
+        - name: DB_USER
+          value: appuser
+
+        - name: DB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: ippmis-secret
+              key: DB_PASSWORD
+
+        - name: DB_NAME
+          value: ippmis
