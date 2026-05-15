@@ -1,5 +1,13 @@
 # 🚀 IPPMIS - Project Portfolio Management System
 
+![Node.js](https://img.shields.io/badge/Node.js-Backend-green)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue)
+![Docker](https://img.shields.io/badge/Docker-Containerization-2496ED)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-Orchestration-326CE5)
+![NGINX](https://img.shields.io/badge/NGINX-Reverse_Proxy-009639)
+![PowerBI](https://img.shields.io/badge/PowerBI-Analytics-F2C811)
+![Cloud Native](https://img.shields.io/badge/Architecture-Cloud_Native-orange)
+
 Cloud-native Enterprise Project Portfolio Management Information System built with:
 
 - Node.js
